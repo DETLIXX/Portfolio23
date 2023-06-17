@@ -1,0 +1,11 @@
+@keyframes OpenApp {
+    from {transform: scale(0); transform-origin: bottom left;}
+    to {transform: scale(1);}
+  }
+  
+  .visible { 
+    transition: 1s;
+    animation-name: OpenApp;
+    animation-duration: 1s;
+  }
+  

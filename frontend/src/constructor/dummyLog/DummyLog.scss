@@ -1,0 +1,19 @@
+.dummy-terminal { 
+    z-index: 9999;
+    position: fixed;
+    bottom: 1%;
+    left: 1%;
+
+
+        h1 { 
+            width: 100%;
+            font-family: var(--cFont);
+            font-weight: 500;
+            font-size: 13px;
+            color: var(--cGrey);
+    
+            padding: 0;
+            margin: 0;
+    
+        }
+}

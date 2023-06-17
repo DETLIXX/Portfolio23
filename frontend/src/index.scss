@@ -1,0 +1,49 @@
+body {
+  background-color: var(--cShadowWhite);
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+:root { 
+  --cWhite: #f5f5f5;
+  --cShadowWhite: #e2e2e2;
+  --cGrey: #383837;
+  --cGreen: #00917C;
+  --cMuggy: #dcdcd3;
+  --cFont: 'Roboto';
+
+}
+
+.window-preset { 
+
+  border-radius: 10px;
+  box-shadow: 1px 10px 10px rgba(0, 0, 0, 0.1);
+
+  background-color: var(--cWhite);
+  overflow: hidden;
+
+  transition: 0.4s;
+}
+
+.black-window { 
+  background-color: var(--cGrey);
+  z-index: 999;
+}
+
+.window-preset:hover { 
+    transform: scale(1.03);
+    box-shadow: 1px 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+
+
+strong { 
+  color: var(--cGrey);
+}
+
+.hidden { 
+  display: none;
+}

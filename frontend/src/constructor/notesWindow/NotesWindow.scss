@@ -1,0 +1,122 @@
+.notes-window { 
+    position: absolute;
+    top: -1000px;
+    left: 400px;
+
+    width: 920px;
+    height: 700px;
+
+}
+
+.notes-window-container { 
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+
+}
+
+.notes-left-panel { 
+    width: 170px;
+    height: 100%;
+    padding: 1%;
+
+    box-shadow: 0 1px 1px black;
+
+    .notes-show-year { 
+        padding: 1%;
+        p { 
+            padding: 0;
+            margin: 0;
+            font-size: 13px;
+            font-family: var(--cFont);
+            font-weight: 500;
+            color: var(--cGrey);
+        }
+    }
+
+    .notes-panel-content { 
+        width: 100%;
+        height: 50px;
+        background-color: rgba(52, 52, 52, 0.1);
+        border-radius: 5px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        margin: 5% 0;
+
+        cursor: pointer;
+
+        transition: .5s;
+
+        i { 
+            font-size: 11px
+        }
+
+    }
+
+    .notes-active { 
+        background-color: var(--cGreen);
+    }
+
+    .notes-panel-content:hover {
+        transform: scale(1.03);
+        background-color: var(--cGreen);
+    }
+
+    .notes-panel-title { 
+        p { 
+            padding: 0;
+            margin: 0;
+            font-size: 13px;
+            font-family: var(--cFont);
+            font-weight: 400;
+            color: var(--cGrey);
+        }
+    }
+
+    .notes-panel-date { 
+        p { 
+            padding: 0;
+            margin: 0;
+            font-size: 13px;
+            font-family: var(--cFont);
+            font-weight: 300;
+            color: var(--cGrey);
+        }
+    }
+}
+
+.notes-right-content { 
+    padding: 1% 2%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+    h1 { 
+        font-family: var(--cFont);
+        font-weight: 600;
+        font-size: 26px;
+        color: var(--cGrey);
+
+    }
+
+    h3 { 
+        padding: 0;
+        margin: 2% 0 1% 0;
+        font-family: var(--cFont);
+        font-weight: 600;
+        font-size: 16px;
+        color: var(--cGrey);
+    }
+
+    p { 
+        width: 90%;
+        padding: 0;
+        margin: 0;
+        font-size: 13px;
+        font-family: var(--cFont);
+        font-weight: 400;
+        color: var(--cGrey);
+    }
+}

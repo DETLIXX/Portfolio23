@@ -1,0 +1,38 @@
+.window-controls { 
+    position: absolute;
+    width: 95%;
+    height: 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: left;
+
+
+    div { 
+        margin: 0 5px;
+        cursor: pointer;
+    }
+
+
+}
+
+.window-contorl-close { 
+    width: 10px;
+    height: 10px;
+    background-color: #FF3B30;
+    border-radius: 50%;
+}
+
+.window-contorl-minimize { 
+    width: 10px;
+    height: 10px;
+    background-color: #FFD60A;
+    border-radius: 50%;
+}
+
+.window-contorl-maximize { 
+    width: 10px;
+    height: 10px;
+    background-color: #34C759;
+    border-radius: 50%;
+}

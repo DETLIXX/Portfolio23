@@ -1,0 +1,17 @@
+.intro-top-filename { 
+    width: 100%;
+    padding: 10px 0;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--cMuggy);
+
+
+    p { 
+        font-family: var(--cFont);
+        font-weight: 300;
+        margin: 0;
+        padding: 0;
+    }
+}

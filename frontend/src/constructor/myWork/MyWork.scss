@@ -1,0 +1,86 @@
+.my-work { 
+    position: absolute;
+    top: 100px;
+    left: 85%;
+
+    width: 450px;
+}
+
+.my-work-roadmap { 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+
+    padding: 3% 0;
+}
+
+.my-work-container { 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    margin: 1% 0;
+}
+
+.my-work-img { 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 75px;
+    height: 75px;
+
+    margin: 5% 0;
+    padding: 1%;
+
+    // background-color: var(--cShadowWhite);
+
+    border-radius: 10px;
+
+    img { 
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+}
+
+.my-work-text { 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    h3 { 
+        font-family: var(--cFont);
+        font-weight: 600;
+        font-size: 26px;
+        color: var(--cGrey);
+
+        padding: 0;
+        margin: 0;
+    }
+
+    p { 
+        width: 70%;
+        text-align: center;
+        padding: 0;
+        margin: 1%;
+        font-size: 13px;
+        font-family: var(--cFont);
+        font-weight: 300;
+        color: var(--cGrey);
+    }
+}
+
+.line {
+    flex: 0 0 auto;
+}
+
+.connector {
+    stroke: black; /* Farba čiary */
+    stroke-width: 0.1; /* Hrúbka čiary */
+}
