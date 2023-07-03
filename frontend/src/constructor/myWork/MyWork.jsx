@@ -32,12 +32,11 @@ export default function MyWork() {
   const GenerateJobs = () => { 
     return ( 
       jobs.map((res, index) => { 
-
         const isLastJob = index === jobs.length - 1;
 
         return ( 
           <>
-            <div className="my-work-container">
+            <div key={index} className="my-work-container">
               <div className="my-work-img">
                 <img src={res.img} alt='Job Image' />
               </div>

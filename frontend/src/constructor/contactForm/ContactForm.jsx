@@ -10,7 +10,7 @@ export default function ContactForm() {
     const [isVisible, setisVisible] = useState(false);
 
     const style = { 
-        top: 900,
+        top: 0,
         left: 100,
     }
     

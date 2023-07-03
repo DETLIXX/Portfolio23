@@ -10,6 +10,7 @@ import SpotifyWindow from './constructor/spotifyWindow/SpotifyWindow';
 import NotesWindow from './constructor/notesWindow/NotesWindow';
 import Technologies from './constructor/technologies/Technologies';
 import TopBar from './constructor/topBar/TopBar';
+import IconBar from './constructor/IconBar/IconBar';
 
 function App() {
 
@@ -25,7 +26,7 @@ function App() {
   const [isDragging, setIsDragging] = useState(false);
 
   useEffect(() => {
-    console.log({offsetX: offsetX, offsetY: offsetY});
+    // console.log({offsetX: offsetX, offsetY: offsetY});
   }, [offsetX, offsetY]);
   
 
@@ -89,13 +90,14 @@ function App() {
     >
       <TopBar/>
       <DummyLog/>
+      {/* <IconBar/> */}
       {/* <Popup/> */}
       <div className="desktop-content" style={{ transform: `translate(${offsetX}px, ${offsetY}px)`}}>
         <ContactForm/>
         <IntroWindow/>
         <TerminalWindow/>
         <FilesContainer/>
-        <SpotifyWindow/>
+        {/* <SpotifyWindow/> */}
         <NotesWindow/>
         <Technologies/>
         {/* {window.location.pathname === '/secret' ? console.log('secret') : ""} */}

@@ -20,8 +20,6 @@ export default function Technologies() {
       'CSS',
       'JavaScript',
       'RESTful APIs',
-      'GraphQL',
-      'Webpack',
       'Git',
       'Authentication and Authorization',
       'Database design and management',

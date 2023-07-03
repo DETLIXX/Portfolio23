@@ -9,18 +9,12 @@ export default function TerminalWindow() {
   const [isVisible, setisVisible] = useState(false);
 
   const style = { 
-    left: 300,
+    left: 1000,
     top: -450
 }
-
-const toggleContentView = () => { 
-    setisVisible(!isVisible)
-}
-
   return (
     <>
-      <IconManager img={apple_img} title={'Terminal'} left={style.left} top={style.top} toggleContentVisibility={toggleContentView}/>
-      <div style={style} className={`terminal-window window-preset ${isVisible ? 'visible' : 'hidden'}`}>
+      <div style={style} className={`terminal-window window-preset`}>
           <WindowHeader path={'Terminal'} text={'Hacking'}/>
           <div className="terminal-window-container">
             <div className="terminal-dummy-text">
