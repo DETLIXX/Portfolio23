@@ -91,7 +91,7 @@ function App() {
       <TopBar/>
       <DummyLog/>
       {/* <IconBar/> */}
-      {/* <Popup/> */}
+        <Popup text={'You can move around by dragging and moving with mouse.'} header={'Hint: How to move'}/>
       <div className="desktop-content" style={{ transform: `translate(${offsetX}px, ${offsetY}px)`}}>
         <ContactForm/>
         <IntroWindow/>

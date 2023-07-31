@@ -8,12 +8,12 @@ import apple_img from '../../resources/apple_notes.avif'
 
 export default function NotesWindow() {
 
-    const [isVisible, setisVisible] = useState(false);
+    const [isVisible, setisVisible] = useState(true);
     const [windowPosition, setWindowPosition] = useState({});
 
     const style = { 
         left: 0,
-        top: -450
+        top: -800
     }
 
 

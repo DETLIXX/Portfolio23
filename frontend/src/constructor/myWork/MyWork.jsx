@@ -5,6 +5,8 @@ import WindowHeader from '../windowHeader/WindowHeader';
 import Gearbox from '../../resources/GEARBOX-blue.png'
 import thiss from '../../resources/thiss.png'
 import freelancer from '../../resources/programming.png'
+import magnifier from '../../resources/magnifier.png'
+
 
 export default function MyWork() {
   const jobs = [
@@ -22,9 +24,15 @@ export default function MyWork() {
     },
     {
       jobName: 'thiss s.r.o',
-      workTime: 'Current Job',
+      workTime: '2022 - 2023',
       img: thiss,
-      jobDescripion: "Working here as a Full Stack Web Developer, I am involved in large-scale projects with a large team.",
+      jobDescripion: "Was working here as a Full Stack Web Developer, I was am involved in large-scale projects",
+    },
+    {
+      jobName: 'Looking for new job',
+      workTime: 'Currently',
+      img: magnifier,
+      jobDescripion: "Currently looking for new job",
     }
   ]
 
@@ -62,6 +70,11 @@ export default function MyWork() {
     return (
       <div className="my-work window-preset">
         <WindowHeader path={'Expiriences'} text={'Jobs'}/>
+        <div className="flex items-center justify-center py-2">
+          <p className='text-[12px] font-thin'>
+            *Most of my work cant be public because of contracts
+          </p>
+        </div>
         <div className="my-work-roadmap">
           <GenerateJobs/>
         </div>

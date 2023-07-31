@@ -6,19 +6,25 @@ import IconManager from '../IconManager/IconManager';
 import apple_img from '../../resources/apple_terminal.png'
 
 export default function TerminalWindow() {
-  const [isVisible, setisVisible] = useState(false);
+  const [isVisible, setisVisible] = useState(true);
 
   const style = { 
-    left: 1000,
+    left: 1500,
     top: -450
-}
+  }
+
+  const toggleContentView = () => { 
+    setisVisible(!isVisible)
+  }
+
   return (
     <>
-      <div style={style} className={`terminal-window window-preset`}>
+      <IconManager img={apple_img} title={'Terminal'} left={style.left} top={style.top} toggleContentVisibility={toggleContentView}/>
+      <div style={style} className={`terminal-window window-preset ${isVisible ? 'visible' : 'hidden'}`}>
           <WindowHeader path={'Terminal'} text={'Hacking'}/>
           <div className="terminal-window-container">
             <div className="terminal-dummy-text">
-            <p>matus.balicky@Macbook % ls </p> 
+            <p className='text-red-500 font-bold'>matus.balicky@Macbook % ls </p> 
             <p>$ Desktop | About This | secret</p>
             <p>matus.balicky@Macbook % cd Desktop </p> 
             <p>matus.balicky@Macbook Desktop % cd <a target='blank_' href="https://bit.ly/43m2rB2">secret</a></p> 

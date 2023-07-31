@@ -1,22 +1,27 @@
-import React from 'react'
+import React, { useCallback, useState } from 'react'
 import './Popup.scss'
 
-export default function Popup() {
+export default function Popup({text, header}) {
+
+    const [close, setclose] = useState(false);
+
+
+
 
   return (
-    <div className='popup-container'>
+    <div className={`${close ? 'hidden' : 'popup-container'}`}>
         <div className="popup-alert">
             <div className="popup-headline">
                 <div className="popup-title">
-                    <p>MESSAGE</p>
+                    <p>{header}</p>
                 </div>
                 <div className="popup-close">
-                    <p>X</p>
+                    <button className='text-red-500' onClick={() => setclose(true)}>X</button>
                 </div>
             </div>
 
             <div className="popup-content">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate omnis, dolorem eius sicing elit. Cupiditate omnis, dolorem ei</p>
+                <p>{text}</p>
             </div>
         </div>
     </div>

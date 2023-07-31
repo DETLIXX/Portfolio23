@@ -23,7 +23,7 @@ export default function FilesContainer() {
     ]
 
     const FolderGenerate = () => { 
-        const [isActive, setisActive] = useState(false);
+        const [isActive, setisActive] = useState(true);
         console.log(isActive);
       
         return ( 

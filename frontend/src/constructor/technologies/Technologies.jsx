@@ -4,41 +4,44 @@ import WindowHeader from '../windowHeader/WindowHeader'
 
 import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
 import { vscDarkPlus } from 'react-syntax-highlighter/dist/esm/styles/prism';
+import vscode_img from '../../resources/vscode.png' 
+
 
 import IconManager from '../IconManager/IconManager';
 
 export default function Technologies() {
 
   const codeString = `import React from 'react';
-  const Technologies = () => {
-    const technologies = [
+  const Knowladge = () => {
+    const knowladgeList = [
+      'React',
+      'NextJS',
+      'Node.js',
       'MongoDB',
       'Express.js',
-      'React',
-      'Node.js',
       'HTML',
       'CSS',
       'JavaScript',
-      'RESTful APIs',
+      'REST API',
       'Git',
-      'Authentication and Authorization',
-      'Database design and management',
-      'Deployment and hosting',
+      'Figma',
+      'Photoshop',
+      'Blender'
     ];
   
     return (
-      <div className="my-technologies">
-        <h1>My Technologies</h1>
+      <div className="my-knowladge">
+        <h1>My Knowladge</h1>
         <ul>
-          {technologies.map((technology, index) => (
-            <li key={index}>{technology}</li>
+          {knowladgeList.map((knowladge, index) => (
+            <p key={index}>{knowladge}</p>
           ))}
         </ul>
       </div>
     );
   };
   
-  export default Technologies;`;
+  export default Knowladge;`;
 
   const folders = [
     {
@@ -58,11 +61,9 @@ export default function Technologies() {
     return ( 
       folders.map((res, index) => { 
         return ( 
-          <>
-              <div className="tech-folder">
+              `<div className="tech-folder">
                   <p>{res}</p>
-              </div>
-          </>
+              </div>`
         )
       })
     )
@@ -73,12 +74,22 @@ export default function Technologies() {
       margin: 0
   };
       
+  const [isVisible, setisVisible] = useState(true);
+
+  const style = { 
+      top: 1000,
+      left: -100,
+  }
+  
+  const toggleContentView = () => { 
+      setisVisible(!isVisible)
+  }
 
 
 return (
     <>
-
-      <div className="tech-container window-preset black-window">
+      <IconManager img={vscode_img} title={'VS Code'} left={style.left} top={style.top} toggleContentVisibility={toggleContentView}/>
+      <div style={style}  className={`tech-container window-preset black-window ${isVisible ? 'visible' : 'hidden'}`}>
           <WindowHeader path={'Visual Studio'} text={'Technologies Knowledge'}/>
           <div className="tech-content">
               <div className="tech-sides tech-left">
@@ -87,8 +98,8 @@ return (
               </SyntaxHighlighter>
 
               </div>
-              <div className="tech-sides tech-right">
-              </div>
+              {/* <div className="tech-sides tech-right">
+              </div> */}
           </div>
       </div>
 
