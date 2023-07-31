@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/Portfolio23/static/css/main.1f39f7d6.css",
+    "main.js": "/Portfolio23/static/js/main.260aac2c.js",
+    "static/media/intro_video.gif": "/Portfolio23/static/media/intro_video.5f6f3358700fe1cb7ba2.gif",
+    "static/media/vscode.png": "/Portfolio23/static/media/vscode.b6ca4049d4c5c164129f.png",
+    "static/media/apple_terminal.png": "/Portfolio23/static/media/apple_terminal.3a1779403b43d9db5913.png",
+    "static/media/GEARBOX-blue.png": "/Portfolio23/static/media/GEARBOX-blue.f46882cabfa888c1edae.png",
+    "static/media/magnifier.png": "/Portfolio23/static/media/magnifier.75f9f58d01d57e083a86.png",
+    "static/media/programming.png": "/Portfolio23/static/media/programming.c29ef1f335e5f30001d8.png",
+    "static/media/thiss.png": "/Portfolio23/static/media/thiss.71b0db16210a0fa07ef7.png",
+    "static/media/apple_email.avif": "/Portfolio23/static/media/apple_email.2b0f53b75e31a9b54151.avif",
+    "static/media/apple_notes.avif": "/Portfolio23/static/media/apple_notes.b15d74c679a656e4c52a.avif",
+    "static/media/icon_folder.svg": "/Portfolio23/static/media/icon_folder.a85c1308bcaf657c958226fe08909d57.svg",
+    "static/media/apple_logo.svg": "/Portfolio23/static/media/apple_logo.47922f32d1d9a08487411185e024b44a.svg",
+    "index.html": "/Portfolio23/index.html",
+    "main.1f39f7d6.css.map": "/Portfolio23/static/css/main.1f39f7d6.css.map",
+    "main.260aac2c.js.map": "/Portfolio23/static/js/main.260aac2c.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1f39f7d6.css",
+    "static/js/main.260aac2c.js"
+  ]
+}
